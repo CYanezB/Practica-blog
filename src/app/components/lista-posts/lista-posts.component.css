@@ -1,0 +1,73 @@
+section {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 2em;
+    padding-top: 2em;
+    color: #ff793f;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+.filtro {
+    display: flex;
+    justify-content: space-around;
+}
+
+article {
+    border: 2px solid #ff793f;
+    padding: 3em;
+    background-color: #40407a;
+}
+
+img {
+    -webkit-box-shadow: 5px 5px 24px 0px rgba(0, 0, 0, 0.7);
+    box-shadow: 5px 5px 24px 0px rgba(0, 0, 0, 0.7);
+    width: 250px;
+    border-radius: 20px;
+    margin-left: 40%;
+}
+
+h2 {
+    font-size: 3em;
+}
+
+article .autor {
+    font-style: oblique;
+    margin: 1em;
+}
+
+article .fecha {
+    font-style: italic;
+    margin-top: 1em;
+}
+
+article .texto {
+    margin: 2em;
+}
+
+.myButton {
+    color: rgb(255, 121, 63);
+    font-size: 17px;
+    line-height: 17px;
+    padding: 8px;
+    border-radius: 14px;
+    font-family: Georgia, serif;
+    font-weight: normal;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+    background-image: linear-gradient(45deg, rgb(71, 71, 135) 0%, rgb(112, 111, 211) 80%, rgb(247, 241, 227) 100%);
+    box-shadow: rgb(0, 0, 0) 5px 5px 15px 5px;
+    border: 8px inset rgb(255, 121, 63);
+    display: inline-block;
+}
+
+.myButton:hover {
+    background: #474787;
+}
+
+.myButton:active {
+    background: #F7F1E3;
+}

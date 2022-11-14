@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="filtro">
+
+        <button class="myButton" value="todos">Todas</button>
+        <button (click)="filtrarCategoria($event)" class="myButton" *ngFor="let post of posts" [value]="post.categoria">{{post.categoria}}</button>
+
+    </div>
+    <section>
+        <article *ngFor="let post of posts">
+            <h2>{{post.titulo}}</h2>
+            <p class="autor">{{post.autor}}</p>
+
+
+            <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit voluptatum accusantium, ullam, voluptatibus nulla expedita ab blanditiis rem rerum dolorem consectetur! Deleniti possimus sequi error nesciunt, quibusdam dignissimos doloremque quae unde, similique assumenda placeat maxime nemo. Eos, doloribus repellendus consectetur porro repudiandae necessitatibus iste unde perferendis, quibusdam vitae earum eum recusandae tenetur ipsum atque exercitationem quia! Officia nisi voluptates nesciunt provident magnam illo unde a ipsum temporibus. Consequuntur fuga totam quas architecto, nulla obcaecati ducimus dolor fugit, repellat qui culpa aut atque voluptates iste adipisci nemo aperiam at voluptatem asperiores sed hic nobis. Beatae nobis maiores aliquam, officia officiis illum aspernatur sint obcaecati unde repellendus earum culpa consectetur modi commodi temporibus. Aliquid blanditiis a quae adipisci consequuntur nemo? Cupiditate esse laboriosam nam sapiente reiciendis voluptatibus at minima placeat facere, ut in quam non et id ullam quasi enim vero. Nam sit voluptatem reprehenderit corrupti modi voluptatibus hic voluptates natus itaque sapiente enim aperiam illo pariatur nostrum deleniti facilis, laboriosam quos aut? Repellendus cum illo quidem nulla nam autem amet sapiente est doloremque aut quaerat veniam aspernatur saepe a fuga officia explicabo dicta voluptas sunt maiores magnam, nobis ratione. Sed soluta molestiae, voluptate totam vel dolorum quis eaque perspiciatis ea obcaecati?</p>
+            <img [src]="post.imagen">
+            <p class="fecha">{{post.fecha}}</p>
+        </article>
+    </section>
+</div>
