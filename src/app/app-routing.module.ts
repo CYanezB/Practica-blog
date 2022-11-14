@@ -6,7 +6,8 @@ import { ListaPostsComponent } from './components/lista-posts/lista-posts.compon
 const routes: Routes = [
   { path: 'posts', component: ListaPostsComponent },
   { path: 'new', component: FormularioComponent },
-  { path: '', component: ListaPostsComponent }
+  { path: '', component: ListaPostsComponent },
+  { path: '**', component: ListaPostsComponent }
 ];
 
 @NgModule({

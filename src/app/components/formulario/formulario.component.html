@@ -1,1 +1,34 @@
-<p>formulario works!</p>
+<div class="container">
+    <form [formGroup]="formulario" (ngSubmit)="onSubmit()">
+        <div>
+            <label for="">Nombre: </label>
+            <input type="text" formControlName="autor">
+        </div>
+        <div>
+            <label for="">Título del post: </label>
+            <input type="text" formControlName="titulo">
+        </div>
+        <div>
+            <label for="">Título del post: </label>
+            <textarea formControlName="texto"></textarea>
+        </div>
+        <div>
+            <label for="">Introduce la URL de la imagen que quieras en el post: </label>
+            <input type="text" formControlName="imagen">
+        </div>
+        <div>
+            <label>Fecha en la que lo escribiste: </label>
+            <input type="date" formControlName="fecha">
+        </div>
+        <div>
+            <label>Categoría </label>
+            <select formControlName="categoria">
+                <option value="MOTOR">MOTOR</option>
+                <option value="COCINA">COCINA</option>
+                <option value="AMOR">AMOR</option>
+                <option value="OTRO">OTRO</option>
+            </select>
+        </div>
+        <input type="submit" value="Enviar">
+    </form>
+</div>

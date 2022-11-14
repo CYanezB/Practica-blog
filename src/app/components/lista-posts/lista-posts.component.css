@@ -40,6 +40,8 @@ article .autor {
 article .fecha {
     font-style: italic;
     margin-top: 1em;
+    text-align: center;
+    font-size: 13px;
 }
 
 article .texto {
